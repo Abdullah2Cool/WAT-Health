@@ -1,0 +1,6 @@
+
+*.ini
+
+\.idea/
+
+node_modules
