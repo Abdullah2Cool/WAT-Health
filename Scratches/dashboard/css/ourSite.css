@@ -1,0 +1,29 @@
+.fixedImg{
+	padding:  4px 4px 4px 4px;
+	font-size: 20px;
+	position:fixed;
+	border: 2px solid #000;
+	top: 80px;
+	right: 5px;
+	background: red;
+}
+a.nope:link{
+	color: #fff;
+}
+a.nope:hover{
+	text-decoration: none;
+}
+.comment{
+	text-align:left;
+	padding-top:10px;
+}
+.insertUser{
+	color:blue;
+}
+.voting{
+	justify-content: flex-start;
+    /* position: absolute; */
+    float: left;
+    left: auto;
+	padding-top:10px;
+}
