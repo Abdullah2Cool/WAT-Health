@@ -1,93 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <meta name="description" content="">
     <meta name="author" content="">
-
     <link rel="icon" type="image/png" href="img-01.png">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto+Slab" rel="stylesheet">
-
     <title>Find a Buddy</title>
-
     <!-- Bootstrap core CSS-->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-
     <!-- Custom styles for this template-->
     <link href="css/sb-admin.css" rel="stylesheet">
-
     <style>
-      
-            .fixed{
-              padding:  4px 4px 4px 4px;
-              font-size: 20px;
-              position:fixed;
-              border: 2px solid #000;
-              top: 80px;
-              right: 5px;
-              background: red;
-            }
-            a.nope:link{
-              color: #fff;
-            }
-            a.nope:hover{
-              text-decoration: none;
-            }
-
-            .card {
-             /* Add shadows to create the "card" effect */
-            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-            transition: 0.3s;
-            border-radius: 5px; 
-            }
-            
-            img.user {
-                border-radius: 5px 5px 0 0;
-            }
-
-            /* Add some padding inside the card container */
-            .container {
-              padding: 2px 16px;
-            }
-
-            .user{
-                padding-top: 5px;
-                display: block;
-                margin: 0 auto;
-            }
-        </style>
-
+    
+    .fixed{
+    padding:  4px 4px 4px 4px;
+    font-size: 20px;
+    position:fixed;
+    border: 2px solid #000;
+    top: 80px;
+    right: 5px;
+    background: red;
+    }
+    a.nope:link{
+    color: #fff;
+    }
+    a.nope:hover{
+    text-decoration: none;
+    }
+    .card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    }
+    
+    img.user {
+    border-radius: 5px 5px 0 0;
+    }
+    /* Add some padding inside the card container */
+    .container {
+    padding: 2px 16px;
+    }
+    .user{
+    padding-top: 5px;
+    display: block;
+    margin: 0 auto;
+    }
+    </style>
   </head>
-
   <body id="page-top" style="font-family: 'Permanent Marker', cursive">
-
     <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
-      
-      
+      <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
       <i><img src="img-01.png" style="width:35px;height:35px;"></i>
       <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
       <a class="navbar-brand mr-1" href="index.html">WATHealth</a>
       </button>
-         <!-- Navbar Search -->
-         <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
-          <div class="input-group">
-            <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon2">
-            <div class="input-group-append">
-              <button class="btn btn-primary" type="button">
-                <i class="fas fa-search"></i>
-              </button>
-            </div>
+      <!-- Navbar Search -->
+      <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon2">
+          <div class="input-group-append">
+            <button class="btn btn-primary" type="button">
+            <i class="fas fa-search"></i>
+            </button>
           </div>
-        </form>
-
+        </div>
+      </form>
       <!-- Navbar -->
       <ul class="navbar-nav navbar-right ml-auto ml-md-0">
         <li class="nav-item dropdown no-arrow">
@@ -96,16 +80,13 @@
           </a>
         </li>
         <li class="nav-item dropdown no-arrow">
-            <a class="nav-link dropdown-toggle" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-              <i class="fas fa-sign-out-alt"></i>
-            </a>
-          </li>
+          <a class="nav-link dropdown-toggle" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-sign-out-alt"></i>
+          </a>
+        </li>
       </ul>
-
     </nav>
-
     <div id="wrapper">
-
       <!-- Sidebar -->
       <ul class="sidebar navbar-nav">
         <li class="nav-item dropdown">
@@ -128,101 +109,93 @@
           <a class="nav-link" href="#">
             <i class="fas fa-fw fa-question"></i>
             <span>Questions</span></a>
-        </li>
-        <li class="nav-item">
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#">
               <i class="fas fa-fw fa-phone"></i>
               <span> Contact Us</span></a>
-          </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">
-              <i class="fas fa-fw fa-stethoscope"></i>
-              <span> Contact a professional</span></a>
-        </li>
-        <!-- <li class="nav-item">
-          <a class="nav-link" href="#">
-            <i class="fas fa-user-friends"></i>
-            <span> Get a buddy</span></a>
-        </li> -->
-      </ul>
-
-      <div id="content-wrapper">
-
-        <div class="container-fluid">
-
-          <!-- Page Content -->
-          <h1 class="text-center">Find a Buddy!</h1>
-          <hr>
-          <br>
-          <div class="container-fluid text-center">
-            <p>Looking for a Buddy or a partner to talk? Sign up here!</p>
-            <p>Find a partner who's signed up for the service as well and is willing to talk</p>
-            <p>Your assigned partner is <b>John Doe</b></p>
-            <div class="card">
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fas fa-fw fa-stethoscope"></i>
+                <span> Contact a professional</span></a>
+              </li><li class="nav-item">
+              <a class="nav-link" href="newsfeed.html">
+                <i class="fas fa-user-friends"></i>
+                <span> NewsFeed</span></a>
+              </li>
+            </ul>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fas fa-user-friends"></i>
+                <span> Get a buddy</span></a>
+              </li> -->
+            </ul>
+            <div id="content-wrapper">
+              <div class="container-fluid">
+                <!-- Page Content -->
+                <h1 class="text-center">Find a Buddy!</h1>
+                <hr>
+                <br>
+                <div class="container-fluid text-center">
+                  <p>Looking for a Buddy or a partner to talk? Sign up here!</p>
+                  <p>Find a partner who's signed up for the service as well and is willing to talk</p>
+                  <p>Your assigned partner is <b>John Doe</b></p>
+                  <div class="card">
                     <div class= "user">
-                        <img src="img-01.png" alt="Avatar" class= "user" style="height: 20%; width:20%;">
+                      <img src="img-01.png" alt="Avatar" class= "user" style="height: 20%; width:20%;">
                     </div>
                     <div class="container">
-                      <h4><b>John Doe</b></h4> 
-                      <p>johndoe@starterhacks.ca</p> 
+                      <h4><b>John Doe</b></h4>
+                      <p>johndoe@starterhacks.ca</p>
                     </div>
+                  </div>
+                  <!-- </div> -->
+                  <div class="fixed" style = "font-family: 'Roboto Slab', serif; color: #fff;">
+                    <a class="nope" href = "https://www.canada.ca/en/public-health/services/mental-health-services/mental-health-get-help.html">Get Help!</a>
+                  </div>
+                </div>
+                <!-- /.container-fluid -->
+                <!-- Sticky Footer -->
+                <footer class="sticky-footer">
+                  <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                      <span>© WATHealth 2019</span>
+                    </div>
+                  </div>
+                </footer>
+              </div>
+              <!-- /.content-wrapper -->
             </div>
-          <!-- </div> -->
-          <div class="fixed" style = "font-family: 'Roboto Slab', serif; color: #fff;">
-                <a class="nope" href = "https://www.canada.ca/en/public-health/services/mental-health-services/mental-health-get-help.html">Get Help!</a>
-          </div>
-        </div>
-        <!-- /.container-fluid -->
-
-        <!-- Sticky Footer -->
-        <footer class="sticky-footer">
-          <div class="container my-auto">
-            <div class="copyright text-center my-auto">
-              <span>© WATHealth 2019</span>
-            </div>
-          </div>
-        </footer>
-
-      </div>
-      <!-- /.content-wrapper -->
-
-    </div>
-    <!-- /#wrapper -->
-
-    <!-- Scroll to Top Button-->
-    <!-- <a class="scroll-to-top rounded" href="#page-top">
-      <i class="fas fa-angle-up"></i>
-    </a> -->
-
-    <!-- Logout Modal-->
-    <!-- <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">×</span>
-            </button>
-          </div>
-          <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-          <div class="modal-footer">
-            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-            <a class="btn btn-primary" href="login.html">Logout</a>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
-    <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin.min.js"></script>
-
-  </body>
-
-</html>
+            <!-- /#wrapper -->
+            <!-- Scroll to Top Button-->
+            <!-- <a class="scroll-to-top rounded" href="#page-top">
+              <i class="fas fa-angle-up"></i>
+            </a> -->
+            <!-- Logout Modal-->
+            <!-- <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                  <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="login.html">Logout</a>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+            <!-- Bootstrap core JavaScript-->
+            <script src="vendor/jquery/jquery.min.js"></script>
+            <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+            <!-- Core plugin JavaScript-->
+            <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+            <!-- Custom scripts for all pages-->
+            <script src="js/sb-admin.min.js"></script>
+          </body>
+        </html>
